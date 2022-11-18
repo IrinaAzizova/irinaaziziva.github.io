@@ -1,9 +1,8 @@
 @font-face {
     font-family: 'Roboto';
-    src: local('Roboto Bold'), local('Roboto-Bold'),
-        url('Roboto-Bold.woff2') format('woff2'),
-        url('Roboto-Bold.woff') format('woff'),
-        url('Roboto-Bold.ttf') format('truetype');
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff'),
+        url('../fonts/Roboto-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -11,10 +10,19 @@
 
 @font-face {
     font-family: 'Roboto';
-    src: local('Roboto'), local('Roboto-Regular'),
-        url('Roboto-Regular.woff2') format('woff2'),
-        url('Roboto-Regular.woff') format('woff'),
-        url('Roboto-Regular.ttf') format('truetype');
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff'),
+        url('../fonts/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;    
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'El Messiri';
+    src: url('../fonts/ElMessiri-Regular.woff2') format('woff2'),
+        url('../fonts/ElMessiri-Regular.woff') format('woff'),
+        url('../fonts/ElMessiri-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -22,21 +30,9 @@
 
 @font-face {
     font-family: 'El Messiri';
-    src: local('El Messiri Regular'), local('ElMessiri-Regular'),
-        url('ElMessiri-Regular.woff2') format('woff2'),
-        url('ElMessiri-Regular.woff') format('woff'),
-        url('ElMessiri-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'El Messiri';
-    src: local('El Messiri Bold'), local('ElMessiri-Bold'),
-        url('ElMessiri-Bold.woff2') format('woff2'),
-        url('ElMessiri-Bold.woff') format('woff'),
-        url('ElMessiri-Bold.ttf') format('truetype');
+    src: url('../fonts/ElMessiri-Bold.woff2') format('woff2'),
+        url('../fonts/ElMessiri-Bold.woff') format('woff'),
+        url('../fonts/ElMessiri-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
     font-display: swap;

@@ -1,0 +1,20 @@
+/***** colors *****/
+
+$white: #ffffff;
+$black:#050505;
+$orange: #f7672c;
+$light-blue: #0bd7f7;
+
+
+/***** fonts *****/
+
+@mixin main-font{    
+    font-family: 'El Messiri', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+@mixin second-font{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+} 
