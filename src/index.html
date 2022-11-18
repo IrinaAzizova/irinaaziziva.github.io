@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -58,16 +58,16 @@
         <nav class="navbar">
             <ul class="navbar__list">
                 <li class="navbar__list-item">
-                    <a href="#" class="navbar__link navbar__link_active">Главная</a>
+                    <a href="#home" class="navbar__link navbar__link_active">Home</a>
                 </li>
                 <li class="navbar__list-item">
-                    <a href="#" class="navbar__link">Стек технолгий</a>
+                    <a href="#" class="navbar__link">Technology stack</a>
                 </li>
                 <li class="navbar__list-item">
-                    <a href="#" class="navbar__link">Примеры работ</a>
+                    <a href="#" class="navbar__link">Projects</a>
                 </li>
                 <li class="navbar__list-item">
-                    <a href="#" class="navbar__link">Контакты</a>
+                    <a href="#" class="navbar__link">Contacts</a>
                 </li>
             </ul>
         </nav>
@@ -80,42 +80,35 @@
     </header>
     <!-- end header section -->
     
-    <div class="intro-section">
-        <div class="container"></div>
+    <!-- intro section start -->
+    <section class="intro" id="home">
+        <div class="container">
+            <div class="intro__wrapper">
+                <p class="intro__hello">hello!</p>
+                <h1>I'm Irina Azizova a frontend developer</h1>
+                <div class="intro__change-tittle animate__fadeIn">
+                    <!-- <div class="intro__tittle">I'm <span>Irina Azizova</span> </div>
+                    <div class="intro__subtittle">a frontend developer</div> -->
+                </div>
+                <div class="intro__btn-box">
+                    <button href="" class="btn btn_orange">Contacts</button>
+                    <button href="" class="btn btn_white">Projects</button>
+                </div>
+
+            </div>
+        </div>
        
-        <!-- slider section -->
+        <!-- slider section --> 
         <!-- <section class=" slider_section ">
           <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active indicator-li-1">01</li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
-            </ol>
-            <ol class="carousel-indicators indicator-2">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active indicator-li-1">01</li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
-            </ol>
+            
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <div class="container">
                   <div class="row">
                     <div class="col-lg-6 col-md-10">
                       <div class="detail-box">
-                        <h1>
-                          Save <span>Birds</span> <br>
-                          Save <span>Animals</span>
-                        </h1>
-                        <p>
-                          There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                          alteration
-                        </p>
-                        <div class="btn-box">
-                          <a href="" class="btn-1">
-                            About Us
-                          </a>
-                          <a href="" class="btn-2">
-                            Donate Now
-                          </a>
-                        </div>
+                       
                       </div>
                     </div>
                     <div class="col-lg-6 col-md-2">
@@ -179,7 +172,9 @@
           </div>
         </section> -->
         <!-- end slider section -->
-      </div>
+      </section>
+      <!-- intro section end -->
+
       <div class="overlay"></div>
     <script src="js/script.js"></script>
 </body>

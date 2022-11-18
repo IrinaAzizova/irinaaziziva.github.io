@@ -1,0 +1,35 @@
+.btn {
+    width: 175px;
+    padding: 12px 0;
+    border: 1px solid transparent;
+    font-size: 18px;
+    border-radius: 10px;
+    &:hover {
+        cursor: pointer;
+    }
+    &_orange {
+        color: $white;
+        background-color: $orange;
+        &:hover {
+            color: $orange;
+            background-color: transparent;
+            border: 1px solid $orange;
+        }
+    }
+    &_white {
+        color: $black;
+        background-color: $white;
+        &:hover {
+            color: $white;
+            background-color: transparent;
+            border: 1px solid $white;
+        }
+    }
+} 
+
+@media (max-width:586px) {
+    .btn {
+        width: 130px;
+        font-size: 13px;
+    }
+}
