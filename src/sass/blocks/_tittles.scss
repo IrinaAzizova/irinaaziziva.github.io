@@ -1,0 +1,96 @@
+.tittle {
+    font-size: 45px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 700;
+    text-align: center;
+    position: relative;
+    color: $black;
+    width: fit-content;
+    margin: 0 auto;    
+    span {
+        color: $orange;
+        @include main-font_700;
+        font-size: 55px;
+        &.tittle__decoration {
+            color: $light-blue;
+            font-size: 60px;
+        }
+    }
+    &:after {        
+        content: "Stack";
+        @include second-font_700;
+        text-transform: uppercase;
+        color: $black-shadow;
+        font-size: 80px;
+        position: absolute;
+        left: 53%;
+        top: 43%;
+        z-index: -1;
+    }
+    &#projects {
+        &:after {
+            content: "Projects";
+            left: 24%;
+        }
+    }
+    &#contacts {
+        &:after {
+            content: "contacts";
+            left: 23%;
+        }
+    }
+}
+
+.subtittle {
+    margin-top: 30px;
+    font-size: 25px;
+    text-align: center;
+    color: $black;
+}
+
+
+
+@media (max-width: 1200px) {
+    .tittle {
+        font-size: 40px;
+        span {
+            font-size: 50px;
+            &.tittle__decoration {
+                font-size: 50px;
+            }
+        }
+        &:after {  
+            font-size: 70px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .tittle {
+        font-size: 35px;
+        span {
+            font-size: 45px;
+            &.tittle__decoration {
+                font-size: 40px;
+            }
+        }
+        &:after {  
+            font-size: 60px;
+        }
+    }
+}
+
+@media (max-width: 586px) {
+    .tittle {
+        font-size: 25px;
+        span {
+            font-size: 33px;
+            &.tittle__decoration {
+                font-size: 30px;
+            }
+        }
+        &:after {  
+            font-size: 42px;
+        }
+    }
+}

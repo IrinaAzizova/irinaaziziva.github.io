@@ -2,6 +2,16 @@
 
 window.addEventListener('DOMContentLoaded', () => {
 
+    /***** find coordinates of element *****/ 
+
+    const stack = document.querySelector('#stack');
+    function offset(el) {
+        var rect = el.getBoundingClientRect(),
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+    }
+
     /***** hamburger menu animation *****/  
 
     const hamburgerBtn = document.querySelector('.hamburger-btn'),
@@ -26,6 +36,11 @@ window.addEventListener('DOMContentLoaded', () => {
     menuItems.forEach((item,i) => {
         item.addEventListener('click', (event) => {
             event.preventDefault();
+            const idLink = event.target.href.split('#')[1];           
+            window.scrollTo({
+                top: offset (document.querySelector(`#${idLink}`)).top,
+                behavior: "smooth"
+            });
             if (navbar.classList.contains('navbar_active')) {
                 toggleActiveClasses();
             }

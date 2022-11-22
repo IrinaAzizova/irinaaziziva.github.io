@@ -1,0 +1,9 @@
+.stack {
+    padding: 100px 0 0;
+}
+
+@media (max-width: 520px) {
+    .stack {
+        padding: 0;
+    }
+}

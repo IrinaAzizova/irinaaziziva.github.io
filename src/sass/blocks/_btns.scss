@@ -1,8 +1,11 @@
 .btn {
+    display: block;
     width: 175px;
     padding: 12px 0;
     border: 1px solid transparent;
     font-size: 18px;
+    text-align: center;
+    text-decoration: none;
     border-radius: 10px;
     &:hover {
         cursor: pointer;
