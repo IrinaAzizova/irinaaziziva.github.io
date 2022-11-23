@@ -1,5 +1,90 @@
 .stack {
     padding: 100px 0 0;
+    &__wrapper {
+        margin: 50px 10%;
+        .slider {
+            li {
+                text-align: center;
+                min-height: 200px;
+                padding: 10px;
+            }
+            &__item {
+                box-shadow: 10px 10px 10px $black-shadow;
+                border: 1px solid $black-shadow;
+                padding: 30px 20px;
+                font-size: 20px;
+                color: $black;
+                border-radius: 10px;
+                &:hover {
+                    background-color: $orange;
+                    svg {                   
+                        polygon {
+                            stroke: $black;
+                        }
+                        &.stroke {
+                        stroke: $black;                        
+                            .figma {
+                                stroke: $black;
+                            }
+                        }
+                        path {
+                            fill: $black;
+                        }
+                    }
+                    p {
+                        color: $white;
+                    }
+                    .slider__line {
+                        background-color: $black;
+                    }
+                }
+                svg {
+                    width: 100%;
+                    height: 50px;                    
+                    polygon {
+                        stroke: $orange;
+                    }
+                    &.stroke {
+                        stroke: $orange;                        
+                        transform: scale(1.35);                        
+                        circle {
+                            fill:none;
+                            stroke: $orange;
+                        }
+                        .figma {
+                            fill: none;
+                            stroke: $orange;
+                            stroke-width: 12;
+                        }
+                    }
+                    &.pug {
+                        transform: scale(1.5);
+                    }
+                    path {                 
+                        fill: $orange;
+                        &.transparent {
+                            fill: none;
+                        }
+                    }                    
+                }
+                p {
+                    margin-top: 20px;
+                }
+            }
+            &__line {
+                width: 30px;
+                margin: 10px auto 0;
+                height: 1px;
+                background-color: $orange;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .stack {
+        padding: 50px 0 0;
+    }
 }
 
 @media (max-width: 520px) {

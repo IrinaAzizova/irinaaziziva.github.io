@@ -42,8 +42,8 @@
 }
 
 .subtittle {
-    margin-top: 30px;
     font-size: 25px;
+    margin-top: 2em;
     text-align: center;
     color: $black;
 }
@@ -63,6 +63,9 @@
             font-size: 70px;
         }
     }
+    .subtittle {
+        font-size: 22px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -78,6 +81,10 @@
             font-size: 60px;
         }
     }
+    
+    .subtittle {
+        font-size: 19px;
+    }
 }
 
 @media (max-width: 586px) {
@@ -92,5 +99,9 @@
         &:after {  
             font-size: 42px;
         }
+    }
+    
+    .subtittle {
+        font-size: 15px;
     }
 }

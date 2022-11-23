@@ -1,5 +1,8 @@
 'use strict';
 
+/***** import script of tiny-slider *****/
+/* import { tns } from "./node_modules/tiny-slider/src/tiny-slider"; */
+
 window.addEventListener('DOMContentLoaded', () => {
 
     /***** find coordinates of element *****/ 
@@ -97,4 +100,19 @@ window.addEventListener('DOMContentLoaded', () => {
     }
     tittleAnimation();
     helloAnimation()
+
+
+
+    /***** use tiny slider *****/
+
+    var slider = tns({
+        container: '.slider',
+        items: 5,
+        slideBy: 'page',
+        autoplay: true,
+        autoplayButton: false,
+        autoplayPosition: 'bottom',
+        navPosition: 'bottom',
+        autoplayHoverPause: true,
+    });
 });

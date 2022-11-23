@@ -32,5 +32,8 @@
     "last 2 versions",
     "not dead",
     "> 0.2%"
-  ]
+  ],
+  "dependencies": {
+    "tiny-slider": "^2.9.4"
+  }
 }
