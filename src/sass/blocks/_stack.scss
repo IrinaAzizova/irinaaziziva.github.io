@@ -161,7 +161,8 @@
         &__wrapper {
             .slider {
                 &__prev, &__next {
-                    display: none;
+                    width: 25px;
+                    height: 25px;
                 }
             }
         }
