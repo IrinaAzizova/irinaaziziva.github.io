@@ -104,15 +104,46 @@ window.addEventListener('DOMContentLoaded', () => {
 
 
     /***** use tiny slider *****/
-
-    var slider = tns({
-        container: '.slider',
-        items: 5,
-        slideBy: 'page',
-        autoplay: true,
-        autoplayButton: false,
-        autoplayPosition: 'bottom',
-        navPosition: 'bottom',
-        autoplayHoverPause: true,
+    let slider;
+    if (document.documentElement.clientWidth > 1200) {
+        slider = tns({
+            container: '.slider',
+            items: 5,
+            autoplay: true,
+            autoplayHoverPause: true,
+            autoplayButtonOutput: false,
+            nav: false,
+            controls: false,
+            slideBy: 1
+        });
+    } else if (document.documentElement.clientWidth > 585 && document.documentElement.clientWidth <= 1200) {
+        slider = tns({
+            container: '.slider',
+            items: 3,
+            autoplay: true,
+            autoplayHoverPause: true,
+            autoplayButtonOutput: false,
+            nav: false,
+            controls: false,
+            slideBy: 1
+        });
+    } else {
+        slider = tns({
+            container: '.slider',
+            items: 1,
+            autoplay: true,
+            autoplayHoverPause: true,
+            autoplayButtonOutput: false,
+            nav: false,
+            controls: false,
+            slideBy: 1
+        });
+    }
+    
+    document.querySelector('.slider__prev').addEventListener('click', () => {
+        slider.goTo('prev');
+    });
+    document.querySelector('.slider__next').addEventListener('click', () => {
+        slider.goTo('next');
     });
 });
